@@ -7,7 +7,7 @@ Personal boilerplate for Eleventy projects
 Heavier-lift techniques that may not be appropriate for every project, but can be referenced from another project:
 
 | Technique                  | Project with example         |
-| -------------------------- | ---------------------------- |
+| :------------------------- | :--------------------------- |
 | Netlify comment forms      | Fiber blog                   |
 | Paginating tagged items    | Personal website             |
 | Webmentions                | Personal website             |
@@ -16,19 +16,29 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 
 [ ] Update package.json with project details
 [ ] Go thru eleventy.js and un-comment or delete utilities; move require statements to top of file
+[ ] Update head.njk with any info for: RSS, social metadata, icons
+[ ] Update images referenced in manifest.webmanifest
+
+-------------------------------------------------------------
+
+## To build
+
+0. Install [Node](https://nodejs.org/) :)
+1. Clone the repo
+2. Run `npm install`
+3. Run `npm run serve`
+4. Visit `localhost:8080`
 
 ## Commands
 
 | Command                    | Purpose                      |
-| -------------------------- | ---------------------------- |
-| npx @11ty/eleventy         | Build project                |
-| npx @11ty/eleventy --serve | Serve project                |
-
-## Reference
-
-* [Eleventy documentation](https://www.11ty.dev/docs/)
-* [Nunjucks templating language](https://mozilla.github.io/nunjucks/templating.html)
-* [Luxon date formatting](https://moment.github.io/luxon/docs/manual/formatting.html)
+| :------------------------- | :--------------------------- |
+| npm run build              | Build project                |
+| npm run checks             | Validate HTML & lint JS      |
+| npm run serve              | Serve project                |
+| npm run lint               | Run eslint                   |
+| npm run lint:fix           | Run eslint and fix issues    |
+| npm run validate           | Run html-validate            |
 
 ## Front-Matter
 
@@ -37,6 +47,9 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 title: 
 date: 2021-##-##
 tags: ["posts", "foo", "bar"]
+featureSrc: (Omit "-m", which is added automatically)
+featureExt: 
+featureAlt: 
 ---
 ```
 
@@ -61,3 +74,11 @@ Filename, extension, max size, alt text, classes:
 
 * Max size can be `l` or `xl`
 * Classes can include `c-media--limit-width`
+
+## Reference
+
+* [Eleventy docs](https://www.11ty.dev/docs/)
+* [ESLint docs](https://eslint.org/)
+* [HTML Validate docs](https://html-validate.org/)
+* [Nunjucks templating language](https://mozilla.github.io/nunjucks/templating.html)
+* [Luxon date formatting](https://moment.github.io/luxon/docs/manual/formatting.html)

@@ -1,9 +1,9 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 
   // UNIVERSAL
 
     // Don't try to build asset files, just transparently copy them through
-    eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy('assets');
 
     // Prettify slug names
     /*

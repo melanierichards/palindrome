@@ -14,10 +14,10 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 
 ## Setup Checklist
 
-[ ] Update package.json with project details
-[ ] Go thru eleventy.js and un-comment or delete utilities; move require statements to top of file
-[ ] Update head.njk with any info for: RSS, social metadata, icons
-[ ] Update images referenced in manifest.webmanifest
+* [ ] Update package.json with project details
+* [ ] Go thru eleventy.js and un-comment or delete utilities; move require statements to top of file
+* [ ] Update head.njk with any info for: RSS, social metadata, icons
+* [ ] Update images referenced in manifest.webmanifest
 
 -------------------------------------------------------------
 
@@ -33,9 +33,9 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 
 | Command                    | Purpose                      |
 | :------------------------- | :--------------------------- |
+| npm run serve              | Serve project                |
 | npm run build              | Build project                |
 | npm run checks             | Validate HTML & lint JS      |
-| npm run serve              | Serve project                |
 | npm run lint               | Run eslint                   |
 | npm run lint:fix           | Run eslint and fix issues    |
 | npm run validate           | Run html-validate            |

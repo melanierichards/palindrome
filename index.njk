@@ -1,0 +1,11 @@
+---
+layout: layouts/home.njk
+slug: home
+title: My Cool Website
+pagination:
+  data: collections.posts
+  size: 10
+  reverse: true
+  alias: posts
+permalink: /{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}
+---

@@ -3,4 +3,11 @@ layout: layouts/global.njk
 ---
 
 <h1>{{ title }}</h1>
-{{ content | safe }}
+
+<ul class="u-bare-list c-post-items" aria-labelledby="recent-heading">
+  {% for post in posts %}
+    {% include "post-item.njk" %}
+  {% endfor %}
+</ul>
+
+{% include "pagination.njk" %}

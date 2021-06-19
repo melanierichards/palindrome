@@ -18,6 +18,7 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 * [ ] Go thru eleventy.js and un-comment or delete utilities; move require statements to top of file
 * [ ] Update head.njk with any info for: RSS, social metadata, icons
 * [ ] Update images referenced in manifest.webmanifest
+* [ ] Delete or edit feed.njk, depending on need for RSS
 
 -------------------------------------------------------------
 
@@ -47,6 +48,7 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 title: 
 date: 2021-##-##
 tags: ["posts", "foo", "bar"]
+description:
 featureSrc: (Omit "-m", which is added automatically)
 featureExt: 
 featureAlt: 

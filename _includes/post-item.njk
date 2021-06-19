@@ -1,0 +1,19 @@
+<li class="c-post-item">
+  <a class="c-post-item__link" href="{{ post.url }}">
+    {% if post.data.featureSrc %}
+      <picture aria-hidden="true" class="c-post-item__image">
+        <source srcset="{{ site.imagesContent }}/{{ post.data.featureSrc }}-l.{{ post.data.featureExt }}" media="(min-width: 800px)">
+        <source srcset="{{ site.imagesContent }}/{{ post.data.featureSrc }}-m.{{ post.data.featureExt }}" media="(min-width: 640px)">
+        <source srcset="{{ site.imagesContent }}/{{ post.data.featureSrc }}-s.{{ post.data.featureExt }}" media="(min-width: 1px)">
+        <img src="{{ site.imagesContent }}/{{ post.data.featureSrc }}-m.{{ post.data.featureExt }}" alt="">
+      </picture>
+    {% endif %}
+    <span class="c-post-item__details">
+      <span class="c-post-item__title">{{ post.data.title }}</span>
+      <time class="c-meta c-meta--block c-post-item__date" datetime="{{ post.date | machineDate }}">{{ post.date | prettyDate }}</time>
+    </span>
+  </a>
+  {% if post.data.description %}
+    <p class="c-post-item__desc">{{ post.data.description }}</p>
+  {% endif %}
+</li>

@@ -33,7 +33,7 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 
 | Command                    | Purpose                      |
 | :------------------------- | :--------------------------- |
-| npm run serve              | Serve project                |
+| npm run start              | Serve project + watch Sass   |
 | npm run build              | Build project                |
 | npm run checks             | Validate HTML & lint JS      |
 | npm run lint               | Run eslint                   |

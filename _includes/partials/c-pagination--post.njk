@@ -1,0 +1,28 @@
+{% set currentItemIndex = 0 %}
+
+{% for item in collections.posts %}
+  {% if item.url == page.url %}
+    {% set currentItemIndex = loop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% set prevItemIndex = currentItemIndex - 1 %}
+{% set nextItemIndex = currentItemIndex + 1 %}
+
+<nav class="l-section c-pagination c-pagination--post" aria-labelledby="pagination-heading">
+  <h2 id="pagination-heading" class="u-vis-hidden">Older and newer post</h2>
+  <div class="c-pagination__links {% if prevItemIndex >= 0 %}c-pagination__links--has-next{% endif %}">
+    {% if prevItemIndex >= 0 %}
+      {% set prev = collections.posts[prevItemIndex] %}
+      <a class="c-pagination__older" href="{{ prev.url }}">
+        <span>{{ prev.data.title }}</span>
+      </a>
+    {% endif %}
+    {% if nextItemIndex < collections.posts.length %}
+      {% set next = collections.posts[nextItemIndex] %}
+      <a class="c-pagination__newer" href="{{ next.url }}">
+        <span>{{ next.data.title }}</span>
+      </a>
+    {% endif %}
+  </div>
+</nav>

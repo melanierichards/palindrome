@@ -1,3 +1,6 @@
+// RSS
+// const pluginRss = require('@11ty/eleventy-plugin-rss');
+
 module.exports = function (eleventyConfig) {
 
   // UNIVERSAL
@@ -21,10 +24,7 @@ module.exports = function (eleventyConfig) {
   // BLOG
 
     // RSS FEED
-    /*
-    const pluginRss = require("@11ty/eleventy-plugin-rss");
-    eleventyConfig.addPlugin(pluginRss);
-    */
+    // eleventyConfig.addPlugin(pluginRss);
 
     // DATE FILTERS
 

@@ -14,10 +14,11 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 
 ## Setup Checklist
 
-* [ ] Update package.json with project details
-* [ ] Go thru eleventy.js and un-comment or delete utilities; move require statements to top of file
-* [ ] Update head.njk with any info for: RSS, social metadata, icons
-* [ ] Update images referenced in manifest.webmanifest
+* [ ] Update `package.json` and `_data/site.json` with project details
+* [ ] If not using posts: delete `feed.njk`, RSS code in `eleventy.js`, post and pagination bits in `_includes`
+* [ ] Go thru `eleventy.js` and un-comment or delete utilities
+* [ ] Update `head.njk` with any info for: RSS, social metadata, icons
+* [ ] Update images referenced in `manifest.webmanifest`
 
 -------------------------------------------------------------
 

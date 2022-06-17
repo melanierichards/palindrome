@@ -1,0 +1,17 @@
+{% if pagination.nextPageHref or pagination.previousPageHref %}
+  <nav class="l-section c-pagination c-pagination--posts" aria-labelledby="pagination-heading">
+    <h2 id="pagination-heading" class="u-vis-hidden">Browse posts</h2>
+    <div class="c-pagination__links {% if pagination.nextPageHref %}c-pagination__links--has-next{% endif %}">
+      {% if pagination.nextPageHref %}
+        <a class="c-pagination__older" href="{{ pagination.nextPageHref }}">
+          <span>Older posts</span>
+        </a>
+      {% endif %}
+      {% if pagination.previousPageHref %}
+        <a class="c-pagination__newer" href="{{ pagination.previousPageHref }}">
+          <span>Newer posts</span>
+        </a>
+      {% endif %}
+    </div>
+  </nav>
+{% endif %}

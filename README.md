@@ -17,6 +17,7 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 * [ ] Update `package.json` and `_data/site.json` with project details
 * [ ] If not using posts: delete `feed.njk`, RSS code in `eleventy.js`, post and pagination bits in `_includes`
 * [ ] Go thru `eleventy.js` and un-comment or delete utilities
+* [ ] Update or remove `icon-sprite.njk`
 * [ ] Update `head.njk` with any info for: RSS, social metadata, icons
 * [ ] Update images referenced in `manifest.webmanifest`
 
@@ -75,6 +76,15 @@ Filename, extension, max size, alt text, classes:
 
 * Max size can be `l` or `xl`
 * Classes can include `c-media--limit-width`
+
+### SVG sprite references
+
+```
+<svg role="image" focusable="false" class="c-rating" viewBox="0 0 20 20" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+  <title>Accessible label</title>
+  <use href="#" y="-20">
+</svg>
+```
 
 ## Reference
 

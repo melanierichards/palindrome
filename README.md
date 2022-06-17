@@ -8,11 +8,11 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 
 | Technique                  | Project with example         |
 | :------------------------- | :--------------------------- |
-| Netlify comment forms      | Fiber blog                   |
+| Netlify comment forms      | World Snacks                 |
 | Paginating tagged items    | Personal website             |
 | Webmentions                | Personal website             |
 
-## Setup Checklist
+## Setup from Template Checklist
 
 * [ ] Update `package.json` and `_data/site.json` with project details
 * [ ] If not using posts: delete `feed.njk`, RSS code in `eleventy.js`, post and pagination bits in `_includes`

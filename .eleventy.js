@@ -2,10 +2,10 @@
 // require('dotenv').config();
 
 // RSS
-// const pluginRss = require('@11ty/eleventy-plugin-rss');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 // Support nice date formatting
-// const { DateTime } = require('luxon');
+const { DateTime } = require('luxon');
 
 module.exports = function (eleventyConfig) {
 
@@ -46,37 +46,29 @@ module.exports = function (eleventyConfig) {
   // BLOG
 
     // RSS FEED
-    // eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(pluginRss);
 
     // DATE FILTERS
 
       // Machine-readable dates
-      /*
       eleventyConfig.addFilter("machineDate", function(value) {
         return DateTime.fromJSDate(value, {zone: 'utc'}).toISO();
       });
-      */
 
       // Prettify dates
-      /*
       eleventyConfig.addFilter("prettyDate", function(value) {
         return DateTime.fromJSDate(value, {zone: 'utc'}).toFormat('MMM dd, yyyy');
       });
-      */
 
       // Prettify ISO dates
-      /*
       eleventyConfig.addFilter("prettyISODate", function(value) {
         return DateTime.fromISO(value, {zone: 'utc'}).toFormat('MMM dd, yyyy');
       });
-      */
 
       // Reduce date to year
-      /*
       eleventyConfig.addFilter("yearOnlyDate", function(value) {
         return DateTime.fromJSDate(value, {zone: 'utc'}).toFormat('yyyy');
       });
-      */
 
     /* EXTRA MD OPTIONS
      * Classes etc: https://www.npmjs.com/package/markdown-it-attrs

@@ -4,7 +4,7 @@
   "description": "Personal boilerplate for Eleventy projects",
   "main": "index.js",
   "scripts": {
-    "sass": "npx sass --style=compressed assets/sass/style.scss assets/css/style.css",
+    "sass": "npx sass --style=compressed src/assets/sass/style.scss src/assets/css/style.css",
     "watch:sass": "npm run sass -- --watch",
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "start": "npm-run-all sass --parallel watch:*",

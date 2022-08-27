@@ -106,4 +106,12 @@ module.exports = function (eleventyConfig) {
       }
     });
     */
+  
+  // CUSTOMIZE INPUT DIRECTORY
+  return {
+    dir: {
+      input: 'src'
+    }
+  }
+  
 };

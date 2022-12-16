@@ -33,14 +33,14 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 
 ## Commands
 
-| Command                    | Purpose                      |
-| :------------------------- | :--------------------------- |
-| npm run start              | Serve project + watch Sass   |
-| npm run build              | Build project                |
-| npm run checks             | Validate HTML & lint JS      |
-| npm run lint               | Run eslint                   |
-| npm run lint:fix           | Run eslint and fix issues    |
-| npm run validate           | Run html-validate            |
+| Command                      | Purpose                      |
+| :--------------------------- | :--------------------------- |
+| `npm run start`              | Serve project + watch Sass   |
+| `npm run build`              | Build project                |
+| `npm run checks`             | Validate HTML & lint JS      |
+| `npm run lint`               | Run eslint                   |
+| `npm run lint:fix`           | Run eslint and fix issues    |
+| `npm run validate`           | Run html-validate            |
 
 ## Front-Matter
 

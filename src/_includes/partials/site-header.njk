@@ -1,1 +1,8 @@
-<header class="site-header"></header>
+<header class="site-header">
+  <div class="l-contain">
+    <nav class="site-header__nav" aria-label="Site navigation">
+      <a href="/" class="site-header__title">{{ site.title }}</a>
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+    </nav>
+  </div>
+</header>

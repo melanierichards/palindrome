@@ -1,0 +1,9 @@
+---
+layout: layouts/global.njk
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+---
+
+<h1>{{ title }}</h1>
+{{ content | safe }}

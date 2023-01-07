@@ -1,11 +1,7 @@
-// Reference env vars
-// require('dotenv').config();
-
-// RSS
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-
-// Support nice date formatting
-const { DateTime } = require('luxon');
+// require('dotenv').config(); // Reference env vars
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation'); // Navigation
+const pluginRss = require('@11ty/eleventy-plugin-rss'); // RSS
+const { DateTime } = require('luxon'); // Date formatting
 
 module.exports = function (eleventyConfig) {
 
@@ -27,21 +23,24 @@ module.exports = function (eleventyConfig) {
     });
     */
 
-  // UTILITIES
+    // UTILITIES
 
-    // LIMIT ARRAY
-    /*
-    eleventyConfig.addFilter('limit', function (arr, limit) {
-      return arr.slice(0, limit);
-    });
-    */
+      // LIMIT ARRAY
+      /*
+      eleventyConfig.addFilter('limit', function (arr, limit) {
+        return arr.slice(0, limit);
+      });
+      */
 
-    // OFFSET ARRAY
-    /*
-    eleventyConfig.addFilter('offset', function (arr, limit) {
-      return arr.slice(limit + 1);
-    });
-    */
+      // OFFSET ARRAY
+      /*
+      eleventyConfig.addFilter('offset', function (arr, limit) {
+        return arr.slice(limit + 1);
+      });
+      */
+    
+    // NAVIGATION
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // BLOG
 

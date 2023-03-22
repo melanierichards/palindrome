@@ -1,6 +1,6 @@
 # Palindrome
 
-Personal boilerplate for Eleventy projects
+Personal boilerplate for Eleventy projects. Testing a change!
 
 ## Not Included
 

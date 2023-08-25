@@ -7,8 +7,10 @@ module.exports = function (eleventyConfig) {
 
   // UNIVERSAL
 
-    // Don't try to build asset files, just transparently copy them through
-    eleventyConfig.addPassthroughCopy('assets');
+    // Don't try to build pages from these files
+    eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("README.md");
+    eleventyConfig.addPassthroughCopy("robots.txt");
     eleventyConfig.addPassthroughCopy('manifest.webmanifest');
 
     // Prettify slug names

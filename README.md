@@ -14,7 +14,7 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 
 ## Setup from Template Checklist
 
-* [ ] Update `package.json` and `_data/site.json` with project details
+* [ ] Update `package.json`, `_data/site.json`, and `feed.njk` with project details
 * [ ] If not using posts: delete `feed.njk`, RSS code in `eleventy.js`, post and pagination bits in `_includes`
 * [ ] Go thru `eleventy.js` and un-comment or delete utilities
 * [ ] Update or remove `icon-sprite.njk`

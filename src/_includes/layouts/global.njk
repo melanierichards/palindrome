@@ -2,7 +2,7 @@
 <html lang="en" {% if slug %}class="html--{{ slug }}"{% endif %}>
 {% include "partials/head.njk" %}
 <body {% if slug %}class="body--{{ slug }}"{% endif %}>
-  {% include 'partials/icon-sprite.njk' %}
+  {% include "partials/icon-sprite.njk" %}
   <a href="#main" class="skip-link skip-link--main">Skip to main content</a>
   {% include "partials/site-header.njk" %}
   <main role="main" id="main" tabindex="-1">

@@ -42,11 +42,6 @@ body {
   color: var(--selection-text);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /*
  *  ---------------------------------------------
  *  TEXT
@@ -56,6 +51,17 @@ img {
  p, ol, ul {
   margin-bottom: 0;
   margin-top: var(--space-s);
+}
+
+/*
+ *  ---------------------------------------------
+ *  MEDIA
+ *  ---------------------------------------------
+ */
+
+ img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*

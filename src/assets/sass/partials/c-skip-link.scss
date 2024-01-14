@@ -1,0 +1,48 @@
+/*
+ *  =============================================
+ *  SKIP TO MAIN CONTENT LINK
+ *  =============================================
+ */
+
+.c-skip-link:link, .c-skip-link:visited {
+  background-color: var(--skip-link-bg);
+  color: var(--skip-link-text);
+  font-size: .875em;
+  left: 4px;
+  padding: var(--space-xxxs);
+  position: absolute;
+  top: 4px;
+
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+  z-index: 9999;
+}
+
+.c-skip-link:hover {
+  text-decoration: underline;
+}
+
+.c-skip-link:focus {
+  outline-offset: 2px;
+
+  clip: auto;
+  height: auto;
+  overflow: auto;
+  width: auto;
+}
+
+/*
+ *  ---------------------------------------------
+ *  BREAKPOINTS
+ *  ---------------------------------------------
+ */
+
+@media (min-width: $bp-m) {
+  .c-skip-link:link, .c-skip-link:visited {
+    left: var(--space-s);
+    top: var(--space-s);
+  }
+}

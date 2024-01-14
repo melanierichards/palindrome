@@ -4,9 +4,80 @@
  *  =============================================
  */
 
+.site-footer {
+  text-align: center;
+}
+
 .site-footer p {
   margin-left: auto;
   margin-right: auto;
   max-width: 40rem;
   text-wrap: balance;
+}
+
+/*
+ *  ---------------------------------------------
+ *  THEME SWITCHER
+ *  ---------------------------------------------
+ */
+
+.theme-switcher {
+  @include all-caps();
+  border: 0;
+  font-size: .825rem;
+  margin-top: var(--space-m);
+  text-align: center;
+  width: 100%;
+
+  legend {
+    font-weight: 700;
+  }
+
+  input {
+    -webkit-appearance: none; /* Safari needs prefixed :( */
+    appearance: none;
+    width: 0;
+  }
+
+  label {
+    border: 2px solid;
+    border-radius: 2px;
+    padding: var(--space-xxxs);
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+      background-color: var(--canvas-text);
+      border-color: var(--canvas-text);
+      color: var(--canvas-bg);
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  input:checked + label {
+    background-color: var(--canvas-text);
+    border-color: var(--canvas-text);
+    color: var(--canvas-bg);
+  }
+
+  input:focus {
+    outline: 0;
+  }
+
+  input:focus + label {
+    outline: 2px solid var(--canvas-text);
+    outline-offset: 2px;
+  }
+}
+
+/* Working around fieldset + Flexbox limitations with an extra wrapper */
+.theme-switcher__layout {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.theme-switcher__options {
+  display: flex;
+  justify-content: center;
 }

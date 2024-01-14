@@ -69,8 +69,12 @@ $bp-xl: 80rem;
   --subtle-text: #a2a2a2;
 }
 
+[data-prefers-theme="dark"] {
+  @include darkScheme;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-prefers-theme="light"]) {
     @include darkScheme;
   }
 }

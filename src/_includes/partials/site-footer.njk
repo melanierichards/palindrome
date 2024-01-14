@@ -1,3 +1,19 @@
 <footer class="site-footer">
   <p>Made by <a href="{{ site.authorUrl}}">{{ site.author }}</a>. You can <a href="{{ site.author }}">explore the code on Github</a>.</p>
+  <fieldset class="theme-switcher">
+    <div class="theme-switcher__layout">
+      <legend>Theme</legend>
+      <div class="theme-switcher__options">
+        <span class="theme-switcher__option">
+          <input id="theme-radio-auto" type="radio" name="theme" value="auto" checked><label for="theme-radio-auto">Auto</label>
+        </span>
+        <span class="theme-switcher__option">
+          <input id="theme-radio-light" type="radio" name="theme" value="light"><label for="theme-radio-light">Light</label>
+        </span>
+        <span class="theme-switcher__option">
+          <input id="theme-radio-dark" type="radio" name="theme" value="dark"><label for="theme-radio-dark">Dark</label>
+        </span>
+      </div>
+    </div>
+  </fieldset>
 </footer>

@@ -1,0 +1,43 @@
+/*
+ *  =============================================
+ *  COMPONENT: PAGINATION
+ *  =============================================
+ */
+
+.c-pagination__links {
+  position: relative;
+}
+ 
+a.c-pagination__older,
+a.c-pagination__newer {
+  border-bottom: 0;
+  display: block;
+  position: relative;
+
+  span {
+    border-bottom: 1px solid transparent;
+  }
+
+  &:hover {
+    span {
+      border-bottom-color: currentColor;
+    }
+  }
+}
+
+@media (min-width: 32em) {
+  .c-pagination__links {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .c-pagination__links--has-next {
+    justify-content: space-between;
+  }
+
+  a.c-pagination__older,
+  a.c-pagination__newer {
+    max-width: 50%;
+}
+}

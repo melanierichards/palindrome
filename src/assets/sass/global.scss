@@ -17,6 +17,8 @@
 }
 
 html {
+  background-color: var(--canvas-bg);
+  color: var(--canvas-text);
   font-family: var(--font-body);
   padding: var(--space-m);
 }
@@ -48,7 +50,17 @@ body {
  *  ---------------------------------------------
  */
 
- p, ol, ul {
+a:link, a:visited {
+  color: currentColor;
+}
+
+a:hover {
+  text-decoration-color: var(--link-hover-border);
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+
+p, ol, ul {
   margin-bottom: 0;
   margin-top: var(--space-s);
 }

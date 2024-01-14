@@ -49,8 +49,28 @@ $bp-xl: 80rem;
  */
 
 :root {
-  --selection-bg: #1b1b1b;
-  --selection-text: #fefefe;
+  --canvas-bg: #fefefe;
+  --canvas-text: #333;
+  --link-hover-border: currentColor;
+  --selection-bg: #000;
+  --selection-text: #fff;
   --skip-link-bg: #1b1b1b;
   --skip-link-text: #fefefe;
+  --subtle-text: #666;
+}
+
+@mixin darkScheme {
+  color-scheme: dark;
+
+  --canvas-bg: #1b1b1b;
+  --canvas-text: #dedede;
+  --selection-bg: #fff;
+  --selection-text: #000;
+  --subtle-text: #a2a2a2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include darkScheme;
+  }
 }
